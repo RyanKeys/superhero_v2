@@ -1,0 +1,16 @@
+from superheroes import Ability, Armor, Hero, Team
+
+hero1 = Hero("Wonder Woman")
+hero2 = Hero("Dumbledore")
+ability1 = Ability("Super Speed", 300)
+ability2 = Ability("Super Eyes", 130)
+ability3 = Ability("Wizard Wand", 80)
+ability4 = Ability("Wizard Beard", 20)
+hero1.add_ability(ability1)
+hero1.add_ability(ability2)
+hero2.add_ability(ability3)
+hero2.add_ability(ability4)
+new_team = Team("new_team")
+hero1.fight(hero2)
+new_team.add_hero(hero1)
+print(hero1.kills)
